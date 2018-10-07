@@ -42,8 +42,11 @@ nav{
 
 /*NAVBAR*/
 /*INDEX*/
+body{
+    background-color: #321a3d;
+}
 .holder{
-    max-width: 960!important;
+    max-width: 960px!important;
     margin: 0 auto;
 }
 
@@ -58,6 +61,39 @@ body{
     margin-top: 73px;
 }
 /*INDEX*/
+/*logoIntro*/
+.logoIntro{
+    margin-top: 70px;
+    position: relative;
+}
+#myVideo {
+    /*position: fixed;*/
+    position: fixed;
+    top: 70px;
+    width: 100%;
+    max-width: 960px!important;
+    z-index: -100;
+    margin: 0 auto;
+
+    /*style="position: fixed; top: 70px; left: 0px; bottom: 0px; right: 0px; z-index: -100; width: 100%;"*/
+}
+
+.logo{
+    width: 100%;
+    align-content: center;
+}
+
+.logo img{
+    max-width: 300px;
+}
+
+#intro{
+	min-height: 900px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+/*logoIntro*/
 /*NOTICIAS*/
 .elementoCarrusel1{
     background-color: red;

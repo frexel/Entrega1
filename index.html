@@ -8,78 +8,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/estilos.css" />
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/codigo.js"></script>
 </head>
 
 <body>
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top justify-content-end">
-            <img src="img/logo.png" srcset="img/logo-vector.svg" alt="Grupo La Caja Negra" class="fixed-top logo">
-            <ul class="navbar-nav justify-content-end">
-                <li class="nav-item">
-                    <a class="nav-link boton" href="#noticias">Noticias</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link boton" href="#quienes">Quiénes Somos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link boton" href="#taylormade">Taylormade</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link boton" href="#obras">Obras</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link boton" href="#contacto">Contacto</a>
-                </li>
-            </ul>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top justify-content-end">
+        <img src="img/logo.png" srcset="img/logo-vector.svg" alt="Grupo La Caja Negra" class="fixed-top logo">
+        <ul class="navbar-nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link boton" href="#noticias">Noticias</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link boton" href="#quienes">Quiénes Somos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link boton" href="#taylormade">Taylormade</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link boton" href="#obras">Obras</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link boton" href="#contacto">Contacto</a>
+            </li>
+        </ul>
     </nav>
     <div class="holder">
+        <section class="logoIntro">
+            <!--Codigo original
+            <video autoplay muted loop id="myVideo">
+            <source src="rain.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+
+            <div class="content">
+                <h1>Heading</h1>
+            </div>
+            -->
+            <div id="intro">
+                <video id="myVideo" preload="auto" autoplay="autoplay" loop="loop" data-speed="6" class="background">
+                    <source src="video/videoBackground.webm" type="video/webm">
+                </video>
+
+            </div>
+            <div class="logo">
+                <img src="img/logo.png" alt="Grupo La Caja Negra">
+            </div>
+        </section>
         <section class="noticias">
             <a id="noticias">
-            <div class="grande">
-            <div id="carouselExampleIndicators" class="carousel slide carrusel carruselQuery" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="elementoCarrusel1"><div class="textoCarrusel1"><h3>Blossom</h3><span>Acá puede ir un texto muy corto. Podría tener fecha. Incluso un <a href="#" title="">link</a>.</span>
-                </div></div>
-            </div>
-            <div class="carousel-item">
-                <div class="elementoCarrusel2"><div class="textoCarrusel1"><h3>Blossom</h3><span>Acá puede ir un texto muy corto. Podría tener fecha. Incluso un <a href="#" title="">link</a>.</span>
-                </div></div>
-            </div>
-            <div class="carousel-item">
-                <div class="elementoCarrusel3"><div class="textoCarrusel1"><h3>Blossom</h3><span>Acá puede ir un texto muy corto. Podría tener fecha. Incluso un <a href="#" title="">link</a>.</span>
-                </div></div>
-            </div>
-        </div>
-            </div>
+                <div class="grande">
+                    <div id="carouselExampleIndicators" class="carousel slide carrusel carruselQuery" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="elementoCarrusel1">
+                                    <div class="textoCarrusel1">
+                                        <h3>Blossom</h3><span>Acá puede ir un texto muy corto. Podría tener fecha.
+                                            Incluso un <a href="#" title="">link</a>.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="elementoCarrusel2">
+                                    <div class="textoCarrusel1">
+                                        <h3>Blossom</h3><span>Acá puede ir un texto muy corto. Podría tener fecha.
+                                            Incluso un <a href="#" title="">link</a>.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="elementoCarrusel3">
+                                    <div class="textoCarrusel1">
+                                        <h3>Blossom</h3><span>Acá puede ir un texto muy corto. Podría tener fecha.
+                                            Incluso un <a href="#" title="">link</a>.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
         </section>
         <section class="quienesSomos">
             <a id="quienes">
-            <div class="grande"><h2>Quiénes Somos</h2>
-                <span style="color: white; padding: 30px; font-size: 1em; background-color: black; display: inline-block;">ESTE FRAGMENTO DE TEXTO LO SUME EN LA UTN</span>
-            </div>
+                <div class="grande">
+                    <h2>Quiénes Somos</h2>
+                    <span style="color: white; padding: 30px; font-size: 1em; background-color: black; display: inline-block;">ESTE
+                        FRAGMENTO DE TEXTO LO SUME EN LA UTN</span>
+                </div>
         </section>
         <section class="taylormade">
             <a id="taylormade">
-            <div class="grande"><h2>Taylormade</h2></div>
+                <div class="grande">
+                    <h2>Taylormade</h2>
+                </div>
         </section>
         <section class="obras">
             <a id="obras">
-            <div class="grande"><h2>Obras</h2>
-                <span style="color: white; padding: 30px; font-size: 1em; background-color: black; display: inline-block;">ESTE FRAGMENTO DE TEXTO LO SUME EN LA UTN POR SEGUNDA VEZ</span>
-            </div>
+                <div class="grande">
+                    <h2>Obras</h2>
+                    <span style="color: white; padding: 30px; font-size: 1em; background-color: black; display: inline-block;">ESTE
+                        FRAGMENTO DE TEXTO LO SUME EN LA UTN POR SEGUNDA VEZ</span>
+                </div>
         </section class="contacto">
-            <a id="contacto">
-            <div class="grande"><h2>Contacto</h2></div>
-        <footer>
-            <div class="container-fluid pieDePagina">
-                
+        <a id="contacto">
+            <div class="grande">
+                <h2>Contacto</h2>
             </div>
-        </footer>
+            <footer>
+                <div class="container-fluid pieDePagina">
+
+                </div>
+            </footer>
     </div>
     <!--Aca pide los Scripts para Bootstrap, estos se piden
     antes de terminar con la etiqueta Body-->
