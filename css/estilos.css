@@ -44,14 +44,12 @@ nav{
 /*INDEX*/
 body{
     background-color: #321a3d;
+    font-style: 'OpenSans';
 }
+
 .holder{
     max-width: 960px!important;
     margin: 0 auto;
-}
-
-body{
-    font-style: 'OpenSans';
 }
 
 .grande{
@@ -65,15 +63,16 @@ body{
 .logoIntro{
     margin-top: 70px;
     position: relative;
+    justify-content: flex;
+    width: 100%;
 }
+
 #myVideo {
     position: fixed;
     width: 100%;
     max-width: 960px!important;
     z-index: -100;
     margin: 0 auto;
-
-    /*style="position: fixed; top: 70px; left: 0px; bottom: 0px; right: 0px; z-index: -100; width: 100%;"*/
 }
 
 .logo{
@@ -88,7 +87,7 @@ body{
     align-self: center;
 }
 
-/*logoIntro*/
+/*FIN logoIntro*/
 /*NOTICIAS*/
 .elementoCarrusel1{
     background-color: red;
@@ -129,10 +128,10 @@ body{
     align-items: flex-end;
     text-decoration: none;
 }
-/*NOTICIAS*/
+/*FIN NOTICIAS*/
 /*FOOTER*/
 .pieDePagina{
     background-color: #343a40;
     height: 70px;
 }
-/*FOOTER*/
+/*FIN FOOTER*/
