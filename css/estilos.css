@@ -21,7 +21,7 @@ Verde #56B949;
 }
 
 /*NAVBAR*/
-.logo{
+.logoNav{
     margin: 20px 0 20px 20px;
 }
 
@@ -67,9 +67,7 @@ body{
     position: relative;
 }
 #myVideo {
-    /*position: fixed;*/
     position: fixed;
-    top: 70px;
     width: 100%;
     max-width: 960px!important;
     z-index: -100;
@@ -80,17 +78,14 @@ body{
 
 .logo{
     width: 100%;
-    align-content: center;
+    justify-content: flex;
+    align-self: center;
 }
 
 .logo img{
     max-width: 300px;
-}
-
-#intro{
-	min-height: 900px;
-	margin: 0 auto;
-	width: 100%;
+    justify-content: flex;
+    align-self: center;
 }
 
 /*logoIntro*/
@@ -119,12 +114,20 @@ body{
     background-color: green;
     height: 400px;
     width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-decoration: none;
 }
 
 .elementoCarrusel3{
     background-color: blue;
     height: 400px;
     width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-decoration: none;
 }
 /*NOTICIAS*/
 /*FOOTER*/
