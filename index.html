@@ -7,12 +7,18 @@
     <title>La Caja Negra</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/estilos.css" />
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/codigo.js"></script>
+
 </head>
 
 <body>
+    <script>
+        AOS.init();
+    </script>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top justify-content-end">
         <img src="img/logo.png" srcset="img/logo-vector.svg" alt="Grupo La Caja Negra" class="fixed-top logoNav">
         <ul class="navbar-nav justify-content-end">
@@ -23,85 +29,136 @@
                 <a class="nav-link boton" href="#quienes">Quiénes Somos</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link boton" href="#taylormade">Taylormade</a>
+                <a class="nav-link boton" href="#obras">Obras</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link boton" href="#obras">Obras</a>
+                <a class="nav-link boton" href="#taylormade">Hecho a Medida</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link boton" href="#contacto">Contacto</a>
             </li>
         </ul>
+    </div>
     </nav>
     <div class="holder">
         <section class="logoIntro">
-            <div id="intro">
-                <video id="myVideo" preload="auto" autoplay="autoplay" loop="loop" data-speed="6" class="background">
+            <div>
+                <video id="intro" preload="auto" autoplay="autoplay" loop="loop" data-speed="10" class="background">
                     <source src="video/videoBackground.webm" type="video/webm">
                 </video>
                 <div class="logo">
                     <img src="img/logo.png" alt="Grupo La Caja Negra">
                 </div>
+                <img src="img/scrolldown.gif" style="display: block; align-self: baseline; max-width: 50px; margin:0 auto 40px auto;">
             </div>
         </section>
         <section class="noticias">
             <a id="noticias">
-                <div class="grande">
-                    <div id="carouselExampleIndicators" class="carousel slide carrusel carruselQuery" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="elementoCarrusel1">
-                                    <div class="textoCarrusel1">
-                                        <h3>Blossom</h3><span>Acá puede ir un texto muy corto. Podría tener fecha.
-                                            Incluso un <a href="#" title="">link</a>.</span>
-                                    </div>
+                <div id="carouselExampleIndicators" class="carousel slide carrusel carruselQuery" data-ride="carousel"
+                    data-aos="fade-up" data-aos-duration="3000">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="elementoCarrusel1">
+                                <div class="textoCarrusel1">
+                                    <h3>Blossom</h3><span>Acá puede ir un texto muy corto. Podría tener fecha.
+                                        Incluso un <a href="#" title="">link</a>.</span>
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <div class="elementoCarrusel2">
-                                    <div class="textoCarrusel1">
-                                        <h3>Blossom</h3><span>Acá puede ir un texto muy corto. Podría tener fecha.
-                                            Incluso un <a href="#" title="">link</a>.</span>
-                                    </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="elementoCarrusel2">
+                                <div class="textoCarrusel1">
+                                    <h3>Blossom</h3><span>Acá puede ir un texto muy corto. Podría tener fecha.
+                                        Incluso un <a href="#" title="">link</a>.</span>
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <div class="elementoCarrusel3">
-                                    <div class="textoCarrusel1">
-                                        <h3>Blossom</h3><span>Acá puede ir un texto muy corto. Podría tener fecha.
-                                            Incluso un <a href="#" title="">link</a>.</span>
-                                    </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="elementoCarrusel3">
+                                <div class="textoCarrusel1">
+                                    <h3>Blossom</h3><span>Acá puede ir un texto muy corto. Podría tener fecha.
+                                        Incluso un <a href="#" title="">link</a>.</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-        </section>
-        <section class="quienesSomos">
-            <a id="quienes">
-                <div class="grande">
-                    <h2>Quiénes Somos</h2>
-                    <span style="color: white; padding: 30px; font-size: 1em; background-color: black; display: inline-block;">ESTE
-                        FRAGMENTO DE TEXTO LO SUME EN LA UTN</span>
                 </div>
+        </section>
+        <section class="sectionComun">
+            <a id="quienes">
+                <h2 style="text-align:center; padding: 20px">Quiénes Somos</h2>
+                <p style="padding:0 80px;">El Grupo La Caja Negra es una compañía teatral que desarrolla propuestas independientes, obras para espacios y eventos particulares. Nuestras creaciones buscan entablar un vínculo de interactividad con el espectador, es por este motivo, que la tecnología cumple un rol de vital importancia en el desarrollo de las obras, incorporando elementos multimediales. Creemos que el teatro debe abandonar su relación pasiva con el público, para sumergirlo en una experiencia interactiva. A la hora de encarar nuestros proyectos, aspiramos a la realización de un producto que contenga nuestros principios fundamentales: El espectador como actor de la obra y la obra como medio de comunicación transformador; para romper la brecha del arte con la vida y entablar un diálogo multidireccional por fuera de los medios hegemónicos.</p>
+        </section>
+        <section class="obras sectionComun" style="margin-top:0!important; padding-top:40px!important;">
+            <a id="obras">   
+                    <h2 style="text-align:center; padding-bottom: 70px;">Nuestras obras</h2>
+                    <div class="container-fuild">
+                        <div class="row no-gutters">
+                            <div class="col-4 obra1" data-aos="fade-right" data-aos-offset="150" data-aos-easing="ease-in-sine">
+                                <img src="img/blossom.jpg" alt="Blossom" style="width: 100%">
+                            </div>
+                            <div class="col-4 obra2" data-aos="fade-down" data-aos-offset="150" data-aos-easing="ease-in-sine">
+                                <img src="img/ojoBombay.jpg" alt="El Ojo de Bombay" style="width: 100%">
+                            </div>
+                            <div class="col-4 obra1" data-aos="fade-left" data-aos-offset="150" data-aos-easing="ease-in-sine">
+                                <img src="img/mundo.jpg" alt="Mundo" style="width: 100%">
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col-4 obra2" data-aos="fade-right" data-aos-offset="150" data-aos-easing="ease-in-sine">
+                                <img src="img/elUltimoEnigma.jpg" alt="El Último Enigma de da Vinci" style="width: 100%">
+                            </div>
+                            <div class="col-4 obra1" data-aos="fade-up" data-aos-offset="150" data-aos-easing="ease-in-sine">
+                                <img src="img/laLiga.jpg" alt="La Liga Extrasolar" style="width: 100%">
+                            </div>
+                            <div class="col-4 obra1" data-aos="fade-left" data-aos-offset="150" data-aos-easing="ease-in-sine">
+                                <div style="width: 100%; height: 100%;"></div>
+                            </div>
+                        </div>
+                    </div>
         </section>
         <section class="taylormade">
             <a id="taylormade">
-                <div class="grande">
-                    <h2>Taylormade</h2>
-                </div>
-        </section>
-        <section class="obras">
-            <a id="obras">
-                <div class="grande">
-                    <h2>Obras</h2>
-                    <span style="color: white; padding: 30px; font-size: 1em; background-color: black; display: inline-block;">ESTE
-                        FRAGMENTO DE TEXTO LO SUME EN LA UTN POR SEGUNDA VEZ</span>
-                </div>
+                    <div class="container-fuild">
+                        <div class="row no-gutters">
+                            <div class="col-4 taylor" data-aos="fade-right" data-aos-offset="150" data-aos-easing="ease-in-sine">
+                                <img src="img/wardenclyfee.jpg" alt="Archivo Wardenclyffe" style="width: 100%">
+                            </div>
+                            <div class="col-4 taylorText">
+                                <h2 class="taylorText">Hecho a medida</h2>
+                            </div>
+                            <div class="col-4 taylor" data-aos="fade-left" data-aos-offset="150" data-aos-easing="ease-in-sine">
+                                <img src="img/love.jpg" alt="Love is a losing game" style="width: 100%">
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col-4 taylor" data-aos="fade-right" data-aos-offset="150" data-aos-easing="ease-in-sine">
+                                <img src="img/warden1.jpg" alt="Archivo Wardenclyffe" style="width: 100%">
+                            </div>
+                            <div class="col-4 taylorText">
+                                <p class="taylorText">Propuestas especiales pensadas para eventos diferentes.</p>
+                            </div>
+                            <div class="col-4 taylor" data-aos="fade-left" data-aos-offset="150" data-aos-easing="ease-in-sine">
+                                <img src="img/love1.jpg" alt="Love is a losing game" style="width: 100%">
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col-4 taylor" data-aos="fade-right" data-aos-offset="150" data-aos-easing="ease-in-sine">
+                                <img src="img/warde2.jpg" alt="Archivo Wardenclyffe" style="width: 100%">
+                            </div>
+                            <div class="col-4 taylor">
+                                <div style="background-color: white; width:100%; height: 100%"></div>
+                            </div>
+                            <div class="col-4 taylor" data-aos="fade-left" data-aos-offset="150" data-aos-easing="ease-in-sine">
+                                <img src="img/love2.jpg" alt="Love is a losing game" style="width: 100%">
+                            </div>
+                        </div>
+                    </div>
         </section class="contacto">
         <a id="contacto">
             <div class="grande">

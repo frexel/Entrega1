@@ -5,8 +5,9 @@ $(document).ready(function(){
 		$('div.background').each(function(index,item){
 			var $scroll = $(item);
 			var yPos = -($ventana.scrollTop() / $scroll.data('speed'));
-			var coords = '50%' + yPos + 'px';
-			$scroll.css({backgroundPosition:coords});
+			var coords = yPos + 'px';
+			document.getElementById('intro').style.top = coords;
+			/*$scroll.css({top:coords});*/
 		})
 	})
 })
