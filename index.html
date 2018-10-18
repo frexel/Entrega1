@@ -11,7 +11,6 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/estilos.css" />
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/aos.js"></script>
-    <script src="js/codigo.js"></script>
 
 </head>
 
@@ -38,18 +37,23 @@
                 <a class="nav-link boton" href="#contacto">Contacto</a>
             </li>
         </ul>
-    </div>
+        </div>
     </nav>
     <div class="holder">
         <section class="logoIntro">
-            <div>
-                <video id="intro" preload="auto" autoplay="autoplay" loop="loop" data-speed="10" class="background">
+            <div class="overlay">
+                <video playsinline="playsinline" id="intro" preload="auto" autoplay="autoplay" loop="loop">
                     <source src="video/videoBackground.webm" type="video/webm">
                 </video>
-                <div class="logo">
-                    <img src="img/logo.png" alt="Grupo La Caja Negra">
+                <div class="container h-100">
+                    <!--Antes también tenia la clase logo-->
+                    <div class="d-flex text-center h-100">
+                        <div class="my-auto w-100">
+                            <img class="display-3" src="img/logo.png" alt="Grupo La Caja Negra">
+                            <img src="img/scrolldown.gif" style="display: block; align-self: baseline; max-width: 50px; margin:0 auto 40px auto;">
+                        </div>
+                    </div>
                 </div>
-                <img src="img/scrolldown.gif" style="display: block; align-self: baseline; max-width: 50px; margin:0 auto 40px auto;">
             </div>
         </section>
         <section class="noticias">
@@ -92,73 +96,81 @@
         <section class="sectionComun">
             <a id="quienes">
                 <h2 style="text-align:center; padding: 20px">Quiénes Somos</h2>
-                <p style="padding:0 80px;">El Grupo La Caja Negra es una compañía teatral que desarrolla propuestas independientes, obras para espacios y eventos particulares. Nuestras creaciones buscan entablar un vínculo de interactividad con el espectador, es por este motivo, que la tecnología cumple un rol de vital importancia en el desarrollo de las obras, incorporando elementos multimediales. Creemos que el teatro debe abandonar su relación pasiva con el público, para sumergirlo en una experiencia interactiva. A la hora de encarar nuestros proyectos, aspiramos a la realización de un producto que contenga nuestros principios fundamentales: El espectador como actor de la obra y la obra como medio de comunicación transformador; para romper la brecha del arte con la vida y entablar un diálogo multidireccional por fuera de los medios hegemónicos.</p>
+                <p style="padding:0 80px;">El Grupo La Caja Negra es una compañía teatral que desarrolla propuestas
+                    independientes, obras para espacios y eventos particulares. Nuestras creaciones buscan entablar un
+                    vínculo de interactividad con el espectador, es por este motivo, que la tecnología cumple un rol de
+                    vital importancia en el desarrollo de las obras, incorporando elementos multimediales. Creemos que
+                    el teatro debe abandonar su relación pasiva con el público, para sumergirlo en una experiencia
+                    interactiva. A la hora de encarar nuestros proyectos, aspiramos a la realización de un producto que
+                    contenga nuestros principios fundamentales: El espectador como actor de la obra y la obra como
+                    medio de comunicación transformador; para romper la brecha del arte con la vida y entablar un
+                    diálogo multidireccional por fuera de los medios hegemónicos.</p>
         </section>
         <section class="obras sectionComun" style="margin-top:0!important; padding-top:40px!important;">
-            <a id="obras">   
-                    <h2 style="text-align:center; padding-bottom: 70px;">Nuestras obras</h2>
-                    <div class="container-fuild">
-                        <div class="row no-gutters">
-                            <div class="col-4 obra1" data-aos="fade-right" data-aos-offset="150" data-aos-easing="ease-in-sine">
-                                <img src="img/blossom.jpg" alt="Blossom" style="width: 100%">
-                            </div>
-                            <div class="col-4 obra2" data-aos="fade-down" data-aos-offset="150" data-aos-easing="ease-in-sine">
-                                <img src="img/ojoBombay.jpg" alt="El Ojo de Bombay" style="width: 100%">
-                            </div>
-                            <div class="col-4 obra1" data-aos="fade-left" data-aos-offset="150" data-aos-easing="ease-in-sine">
-                                <img src="img/mundo.jpg" alt="Mundo" style="width: 100%">
-                            </div>
+            <a id="obras">
+                <h2 style="text-align:center; padding-bottom: 70px;">Nuestras obras</h2>
+                <div class="container-fuild">
+                    <div class="row no-gutters">
+                        <div class="col-4 obra1" data-aos="fade-right" data-aos-offset="150" data-aos-easing="ease-in-sine">
+                            <img src="img/blossom.jpg" alt="Blossom" style="width: 100%">
                         </div>
-                        <div class="row no-gutters">
-                            <div class="col-4 obra2" data-aos="fade-right" data-aos-offset="150" data-aos-easing="ease-in-sine">
-                                <img src="img/elUltimoEnigma.jpg" alt="El Último Enigma de da Vinci" style="width: 100%">
-                            </div>
-                            <div class="col-4 obra1" data-aos="fade-up" data-aos-offset="150" data-aos-easing="ease-in-sine">
-                                <img src="img/laLiga.jpg" alt="La Liga Extrasolar" style="width: 100%">
-                            </div>
-                            <div class="col-4 obra1" data-aos="fade-left" data-aos-offset="150" data-aos-easing="ease-in-sine">
-                                <div style="width: 100%; height: 100%;"></div>
-                            </div>
+                        <div class="col-4 obra2" data-aos="fade-down" data-aos-offset="150" data-aos-easing="ease-in-sine">
+                            <img src="img/ojoBombay.jpg" alt="El Ojo de Bombay" style="width: 100%">
+                        </div>
+                        <div class="col-4 obra1" data-aos="fade-left" data-aos-offset="150" data-aos-easing="ease-in-sine">
+                            <img src="img/mundo.jpg" alt="Mundo" style="width: 100%">
                         </div>
                     </div>
+                    <div class="row no-gutters">
+                        <div class="col-4 obra2" data-aos="fade-right" data-aos-offset="150" data-aos-easing="ease-in-sine">
+                            <img src="img/elUltimoEnigma.jpg" alt="El Último Enigma de da Vinci" style="width: 100%">
+                        </div>
+                        <div class="col-4 obra1" data-aos="fade-up" data-aos-offset="150" data-aos-easing="ease-in-sine">
+                            <img src="img/laLiga.jpg" alt="La Liga Extrasolar" style="width: 100%">
+                        </div>
+                        <div class="col-4 obra1" data-aos="fade-left" data-aos-offset="150" data-aos-easing="ease-in-sine">
+                            <div style="width: 100%; height: 100%;"></div>
+                        </div>
+                    </div>
+                </div>
         </section>
         <section class="taylormade">
             <a id="taylormade">
-                    <div class="container-fuild">
-                        <div class="row no-gutters">
-                            <div class="col-4 taylor" data-aos="fade-right" data-aos-offset="150" data-aos-easing="ease-in-sine">
-                                <img src="img/wardenclyfee.jpg" alt="Archivo Wardenclyffe" style="width: 100%">
-                            </div>
-                            <div class="col-4 taylorText">
-                                <h2 class="taylorText">Hecho a medida</h2>
-                            </div>
-                            <div class="col-4 taylor" data-aos="fade-left" data-aos-offset="150" data-aos-easing="ease-in-sine">
-                                <img src="img/love.jpg" alt="Love is a losing game" style="width: 100%">
-                            </div>
+                <div class="container-fuild">
+                    <div class="row no-gutters">
+                        <div class="col-4 taylor" data-aos="fade-right" data-aos-offset="150" data-aos-easing="ease-in-sine">
+                            <img src="img/wardenclyfee.jpg" alt="Archivo Wardenclyffe" style="width: 100%">
                         </div>
-                        <div class="row no-gutters">
-                            <div class="col-4 taylor" data-aos="fade-right" data-aos-offset="150" data-aos-easing="ease-in-sine">
-                                <img src="img/warden1.jpg" alt="Archivo Wardenclyffe" style="width: 100%">
-                            </div>
-                            <div class="col-4 taylorText">
-                                <p class="taylorText">Propuestas especiales pensadas para eventos diferentes.</p>
-                            </div>
-                            <div class="col-4 taylor" data-aos="fade-left" data-aos-offset="150" data-aos-easing="ease-in-sine">
-                                <img src="img/love1.jpg" alt="Love is a losing game" style="width: 100%">
-                            </div>
+                        <div class="col-4 taylorText">
+                            <h2 class="taylorText">Hecho a medida</h2>
                         </div>
-                        <div class="row no-gutters">
-                            <div class="col-4 taylor" data-aos="fade-right" data-aos-offset="150" data-aos-easing="ease-in-sine">
-                                <img src="img/warde2.jpg" alt="Archivo Wardenclyffe" style="width: 100%">
-                            </div>
-                            <div class="col-4 taylor">
-                                <div style="background-color: white; width:100%; height: 100%"></div>
-                            </div>
-                            <div class="col-4 taylor" data-aos="fade-left" data-aos-offset="150" data-aos-easing="ease-in-sine">
-                                <img src="img/love2.jpg" alt="Love is a losing game" style="width: 100%">
-                            </div>
+                        <div class="col-4 taylor" data-aos="fade-left" data-aos-offset="150" data-aos-easing="ease-in-sine">
+                            <img src="img/love.jpg" alt="Love is a losing game" style="width: 100%">
                         </div>
                     </div>
+                    <div class="row no-gutters">
+                        <div class="col-4 taylor" data-aos="fade-right" data-aos-offset="150" data-aos-easing="ease-in-sine">
+                            <img src="img/warden1.jpg" alt="Archivo Wardenclyffe" style="width: 100%">
+                        </div>
+                        <div class="col-4 taylorText">
+                            <p class="taylorText">Propuestas especiales pensadas para eventos diferentes.</p>
+                        </div>
+                        <div class="col-4 taylor" data-aos="fade-left" data-aos-offset="150" data-aos-easing="ease-in-sine">
+                            <img src="img/love1.jpg" alt="Love is a losing game" style="width: 100%">
+                        </div>
+                    </div>
+                    <div class="row no-gutters">
+                        <div class="col-4 taylor" data-aos="fade-right" data-aos-offset="150" data-aos-easing="ease-in-sine">
+                            <img src="img/warde2.jpg" alt="Archivo Wardenclyffe" style="width: 100%">
+                        </div>
+                        <div class="col-4 taylor">
+                            <div style="background-color: white; width:100%; height: 100%"></div>
+                        </div>
+                        <div class="col-4 taylor" data-aos="fade-left" data-aos-offset="150" data-aos-easing="ease-in-sine">
+                            <img src="img/love2.jpg" alt="Love is a losing game" style="width: 100%">
+                        </div>
+                    </div>
+                </div>
         </section class="contacto">
         <a id="contacto">
             <div class="grande">

@@ -59,12 +59,42 @@ body{
 }
 /*INDEX*/
 /*logoIntro*/
-.logoIntro{
-    display: block;
-    /*margin-top: 70px;*/
-    position: relative;
-    justify-content: flex;
+.overlay .video{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%); 
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
     width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+.overlay .container{
+    position: relative;
+    z-index: 2;
+}
+.logoIntro{
+position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
 }
 
 .intro{
@@ -73,6 +103,7 @@ body{
     width: 100%;
 }
 
+/*ESTE ES EL VIEJO CSS DEL VIDEO-BACKGROUND
 #intro{
     position: fixed;
     width: 100%;
@@ -81,7 +112,7 @@ body{
     display: block;
     opacity: 0.4; 
     margin: 0 auto;
-}
+}*/
 
 .background{
     top:-100px;
@@ -100,6 +131,15 @@ body{
     max-width: 400px;
     border-radius: 40%;
 }
+
+@media (pointer: coarse) and (hover: none) {
+    .logoIntro {
+      background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    }
+    .logoIntro video {
+      display: none;
+    }
+  }
 
 /*FIN logoIntro*/
 /*NOTICIAS*/
