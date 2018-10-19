@@ -12,15 +12,23 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/aos.js"></script>
 
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="icons/site.webmanifest">
+    <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
     <script>
         AOS.init();
     </script>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top justify-content-end">
+    <nav class="navbar navbar-inverse navbar-expand-sm bg-dark navbar-dark fixed-top justify-content-end" role="tablist">
         <img src="img/logo.png" srcset="img/logo-vector.svg" alt="Grupo La Caja Negra" class="fixed-top logoNav">
-        <ul class="navbar-nav justify-content-end">
+        <ul class="nav navbar-nav justify-content-end">
             <li class="nav-item">
                 <a class="nav-link boton" href="#noticias">Noticias</a>
             </li>
@@ -42,159 +50,224 @@
     <div class="holder">
         <section class="logoIntro">
             <div class="overlay">
-                <video playsinline="playsinline" id="intro" preload="auto" autoplay="autoplay" loop="loop">
-                    <source src="video/videoBackground.webm" type="video/webm">
+                <video playsinline="playsinline" id="intro" preload="auto" autoplay="autoplay" loop="loop"
+                    data-paroller-factor="0.3" data-paroller-factor-xs="0.3" data-paroller-type="foreground"
+                    data-paroller-direction="vertical">
+                    <source src="video/videoBackground.mp4" type="video/mp4">
                 </video>
                 <div class="container h-100">
                     <!--Antes también tenia la clase logo-->
                     <div class="d-flex text-center h-100">
                         <div class="my-auto w-100">
-                            <img class="display-3" src="img/logo.png" alt="Grupo La Caja Negra">
+                            <img class="display-3 logo" src="img/logo.png" alt="Grupo La Caja Negra">
                             <img src="img/scrolldown.gif" style="display: block; align-self: baseline; max-width: 50px; margin:0 auto 40px auto;">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="noticias">
-            <a id="noticias">
-                <div id="carouselExampleIndicators" class="carousel slide carrusel carruselQuery" data-ride="carousel"
-                    data-aos="fade-up" data-aos-duration="3000">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="elementoCarrusel1">
-                                <div class="textoCarrusel1">
-                                    <h3>Blossom</h3><span>Acá puede ir un texto muy corto. Podría tener fecha.
-                                        Incluso un <a href="#" title="">link</a>.</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="elementoCarrusel2">
-                                <div class="textoCarrusel1">
-                                    <h3>Blossom</h3><span>Acá puede ir un texto muy corto. Podría tener fecha.
-                                        Incluso un <a href="#" title="">link</a>.</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="elementoCarrusel3">
-                                <div class="textoCarrusel1">
-                                    <h3>Blossom</h3><span>Acá puede ir un texto muy corto. Podría tener fecha.
-                                        Incluso un <a href="#" title="">link</a>.</span>
-                                </div>
+        <section class="noticias" id="noticias">
+            <div id="carouselExampleIndicators" class="carousel slide carrusel carruselQuery" data-ride="carousel"
+                data-aos="fade-up" data-aos-duration="3000">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="elementoCarrusel1">
+                            <div class="textoCarrusel1">
+                                <h3>Blossom</h3><span>Acá puede ir un texto muy corto. Podría tener fecha.
+                                    Incluso un <a href="#" title="">link</a>.</span>
                             </div>
                         </div>
                     </div>
+                    <div class="carousel-item">
+                        <div class="elementoCarrusel2">
+                            <div class="textoCarrusel1">
+                                <h3>Blossom</h3><span>Acá puede ir un texto muy corto. Podría tener fecha.
+                                    Incluso un <a href="#" title="">link</a>.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="elementoCarrusel3">
+                            <div class="textoCarrusel1">
+                                <h3>Blossom</h3><span>Acá puede ir un texto muy corto. Podría tener fecha.
+                                    Incluso un <a href="#" title="">link</a>.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
-        </section>
-        <section class="sectionComun">
-            <a id="quienes">
-                <h2 style="text-align:center; padding: 20px">Quiénes Somos</h2>
-                <p style="padding:0 80px;">El Grupo La Caja Negra es una compañía teatral que desarrolla propuestas
-                    independientes, obras para espacios y eventos particulares. Nuestras creaciones buscan entablar un
-                    vínculo de interactividad con el espectador, es por este motivo, que la tecnología cumple un rol de
-                    vital importancia en el desarrollo de las obras, incorporando elementos multimediales. Creemos que
-                    el teatro debe abandonar su relación pasiva con el público, para sumergirlo en una experiencia
-                    interactiva. A la hora de encarar nuestros proyectos, aspiramos a la realización de un producto que
-                    contenga nuestros principios fundamentales: El espectador como actor de la obra y la obra como
-                    medio de comunicación transformador; para romper la brecha del arte con la vida y entablar un
-                    diálogo multidireccional por fuera de los medios hegemónicos.</p>
-        </section>
-        <section class="obras sectionComun" style="margin-top:0!important; padding-top:40px!important;">
-            <a id="obras">   
-                    <h2 style="text-align:center; padding-bottom: 70px;">Nuestras obras</h2>
-                    <div class="container-fluid">
-                        <div class="row no-gutters">
-                            <div class="col-4 obra1" data-aos="fade-right" data-aos-offset="150" data-aos-easing="ease-in-sine">
-                                <img src="img/blossom.jpg" alt="Blossom" style="width: 100%">
-                            </div>
-                            <div class="col-4 obra2" data-aos="fade-down" data-aos-offset="150" data-aos-easing="ease-in-sine">
-                                <img src="img/ojoBombay.jpg" alt="El Ojo de Bombay" style="width: 100%">
-                            </div>
-                            <div class="col-4 obra1" data-aos="fade-left" data-aos-offset="150" data-aos-easing="ease-in-sine">
-                                <img src="img/mundo.jpg" alt="Mundo" style="width: 100%">
-                            </div>
-                        </div>
-                        <div class="col-4 obra2" data-aos="fade-down" data-aos-offset="150" data-aos-easing="ease-in-sine">
-                            <img src="img/ojoBombay.jpg" alt="El Ojo de Bombay" style="width: 100%">
-                        </div>
-                        <div class="col-4 obra1" data-aos="fade-left" data-aos-offset="150" data-aos-easing="ease-in-sine">
-                            <img src="img/mundo.jpg" alt="Mundo" style="width: 100%">
-                        </div>
-                    </div>
-                    <div class="row no-gutters">
-                        <div class="col-4 obra2" data-aos="fade-right" data-aos-offset="150" data-aos-easing="ease-in-sine">
-                            <img src="img/elUltimoEnigma.jpg" alt="El Último Enigma de da Vinci" style="width: 100%">
-                        </div>
-                        <div class="col-4 obra1" data-aos="fade-up" data-aos-offset="150" data-aos-easing="ease-in-sine">
-                            <img src="img/laLiga.jpg" alt="La Liga Extrasolar" style="width: 100%">
-                        </div>
-                        <div class="col-4 obra1" data-aos="fade-left" data-aos-offset="150" data-aos-easing="ease-in-sine">
-                            <div style="width: 100%; height: 100%;"></div>
-                        </div>
-                    </div>
-                </div>
-        </section>
-        <section class="taylormade">
-            <a id="taylormade">
-                    <div class="container-fluid">
-                        <div class="row no-gutters">
-                            <div class="col-4 taylor taylorFix" data-aos="fade-right" data-aos-offset="150" data-aos-easing="ease-in-sine">
-                                <img src="img/wardenclyfee.jpg" alt="Archivo Wardenclyffe" style="width: 100%;">
-                            </div>
-                            <div class="col-4 taylorText" style="margin-bottom: 0!important;">
-                                <h2 class="taylorText">Hecho a medida</h2>
-                            </div>
-                            <div class="col-4 taylor taylorFix" data-aos="fade-left" data-aos-offset="150" data-aos-easing="ease-in-sine">
-                                <img src="img/love.jpg" alt="Love is a losing game" style="width: 100%;">
-                            </div>
-                        </div>
-                        <div class="row no-gutters">
-                            <div class="col-4 taylor" data-aos="fade-right" data-aos-offset="150" data-aos-easing="ease-in-sine">
-                                <img src="img/warden1.jpg" alt="Archivo Wardenclyffe" style="width: 100%;">
-                            </div>
-                            <div class="col-4 taylorText">
-                                <p class="taylorText">Propuestas especiales pensadas para eventos diferentes.</p>
-                            </div>
-                            <div class="col-4 taylor" data-aos="fade-left" data-aos-offset="150" data-aos-easing="ease-in-sine">
-                                <img src="img/love1.jpg" alt="Love is a losing game" style="width: 100%;">
-                            </div>
-                        </div>
-                        <div class="row no-gutters">
-                            <div class="col-4 taylor" data-aos="fade-right" data-aos-offset="150" data-aos-easing="ease-in-sine">
-                                <img src="img/warde2.jpg" alt="Archivo Wardenclyffe" style="width: 100%;">
-                            </div>
-                            <div class="col-4 taylorText" >
-                                <p class="taylorText"style="background-color: #56B949;">Obras e intervenciones artísticas diseñadas para la ocasión.</p>
-                            </div>
-                            <div class="col-4 taylor" data-aos="fade-left" data-aos-offset="150" data-aos-easing="ease-in-sine">
-                                <img src="img/love2.jpg" alt="Love is a losing game" style="width: 100%;">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        </section class="contacto">
-        <a id="contacto">
-            <div class="grande">
-                <h2>Contacto</h2>
             </div>
-            <footer>
-                <div class="container-fluid pieDePagina">
-
+        </section>
+        <section class="sectionComun" id="quienes">
+            <h2 style="text-align:center; padding: 20px" data-aos="fade-up" data-aos-duration="3000">Quiénes Somos</h2>
+            <p style="padding:0 80px;" data-aos="fade-up" data-aos-duration="3000">El Grupo La Caja Negra es una
+                compañía teatral que desarrolla propuestas
+                independientes, obras para espacios y eventos particulares. Nuestras creaciones buscan entablar un
+                vínculo de interactividad con el espectador, es por este motivo, que la tecnología cumple un rol de
+                vital importancia en el desarrollo de las obras, incorporando elementos multimediales. Creemos que
+                el teatro debe abandonar su relación pasiva con el público, para sumergirlo en una experiencia
+                interactiva. A la hora de encarar nuestros proyectos, aspiramos a la realización de un producto que
+                contenga nuestros principios fundamentales: El espectador como actor de la obra y la obra como
+                medio de comunicación transformador; para romper la brecha del arte con la vida y entablar un
+                diálogo multidireccional por fuera de los medios hegemónicos.</p>
+        </section>
+        <section class="obras sectionComun" style="margin-top:0!important; padding-top:40px!important;" id="obras">
+            <h2 style="text-align:center; padding-bottom: 70px;" data-aos="fade-up" data-aos-duration="3000">Nuestras
+                obras</h2>
+            <div class="container-fluid" style="padding-right: 0px!important; padding-left: 0px;">
+                <div class="row no-gutters">
+                    <div class="col-4 obra1" data-aos="fade-right" data-aos-offset="250" data-aos-easing="ease-in-sine"
+                        data-aos-duration="4000">
+                        <img src="img/blossom.jpg" alt="Blossom" style="width: 100%">
+                    </div>
+                    <div class="col-4 obra2" data-aos="fade-down" data-aos-offset="250" data-aos-easing="ease-in-sine"
+                        data-aos-duration="4000">
+                        <img src="img/ojoBombay.jpg" alt="El Ojo de Bombay" style="width: 100%">
+                    </div>
+                    <div class="col-4 obra1" data-aos="fade-left" data-aos-offset="250" data-aos-easing="ease-in-sine"
+                        data-aos-duration="4000">
+                        <img src="img/mundo.jpg" alt="Mundo" style="width: 100%">
+                    </div>
                 </div>
-            </footer>
+                <div class="row no-gutters">
+                    <div class="col-4 obra2" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine"
+                        data-aos-duration="3900">
+                        <img src="img/elUltimoEnigma.jpg" alt="El Último Enigma de da Vinci" style="width: 100%">
+                    </div>
+                    <div class="col-4 obra1" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine"
+                        data-aos-duration="3900">
+                        <img src="img/laLiga.jpg" alt="La Liga Extrasolar" style="width: 100%">
+                    </div>
+                    <div class="col-4 obra1" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine"
+                        data-aos-duration="3900">
+                        <div style="width: 100%; height: 100%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="taylormade" id="taylormade">
+            <div class="container-fluid no-gutters" style="padding-right: 0px!important; padding-left: 0px;">
+                <div class="row no-gutters">
+                    <div class="col-4 taylor" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine"
+                        data-aos-duration="3500" data-aos-offset="400">
+                        <img src="img/wardenclyfee.jpg" alt="Archivo Wardenclyffe" style="width: 100%;">
+                    </div>
+                    <div class="col-4 my-auto" data-aos="fade-up" data-aos-duration="4000" data-aos-offset="0">
+                        <h2 class="taylorTitulo">Hecho a medida</h2>
+                    </div>
+                    <div class="col-4 taylor" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                        data-aos-duration="3500" data-aos-offset="400">
+                        <img src="img/love.jpg" alt="Love is a losing game" style="width: 100%;">
+                    </div>
+                </div>
+                <div class="row no-gutters taylorTextColor1">
+                    <div class="col-4 my-auto" data-aos="fade-up" data-aos-duration="4000" data-aos-offset="200" style="display:block;">
+                        <h4 class="taylorText1">Propuestas especiales pensadas para eventos diferentes.</h4>
+                    </div>
+                    <div class="col-4 taylor" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
+                        <img src="img/warden1.jpg" alt="Archivo Wardenclyffe" style="width: 100%;">
+                    </div>
+                    <div class="col-4 taylor" data-aos="fade-left" data-aos-offset="250" data-aos-easing="ease-in-sine">
+                        <img src="img/love1.jpg" alt="Love is a losing game" style="width: 100%;">
+                    </div>
+                </div>
+                <div class="row no-gutters taylorTextColor2">
+                    <div class="col-4 taylor" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
+                        <img src="img/warde2.jpg" alt="Archivo Wardenclyffe" style="width: 100%;">
+                    </div>
+                    <div class="col-4 taylor" data-aos="fade-left" data-aos-offset="250" data-aos-easing="ease-in-sine">
+                        <img src="img/love2.jpg" alt="Love is a losing game" style="width: 100%;">
+                    </div>
+                    <div class="col-4 my-auto" data-aos="fade-up" data-aos-duration="4000" data-aos-offset="200" style="display:block;">
+                        <h4 class="taylorText2">Obras e intervenciones artísticas
+                            diseñadas para la ocasión.</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contacto" id="contacto">
+            <div class="container-fluid" style="padding-right: 0px!important; padding-left: 0px;" data-aos="fade-up"
+                data-aos-duration="3000">
+                <div class="row no-gutters justify-content-center">
+                    <div class="col-4">
+                        <h2 style="text-align: center;">Contacto</h2>
+                    </div>
+                </div>
+                <div class="row no-gutters" style="margin-top:40px;">
+                    <div class="col-6" style="border-right: 2px solid #844d9e;">
+                        <div class="redes">
+                            <h4 style="font-style: oblique;" class="formularioItem">Nuestras redes</h4>
+                            <div class="contenedorRedes">
+                                <a href="mailto:gt.lacajanegra@gmail.com" class="icon-mail icon" style="margin-left:0!important;"
+                                    target="_blank"></a>
+                                <a href="https://www.facebook.com/grupo.lacajanegra/" class="icon-facebook icon" target="_blank"></a>
+                                <a href="https://www.instagram.com/grupolacajanegra/" class="icon-instagram icon"
+                                    target="_blank"></a>
+                            </div>
+                        </div>
+                        <div class="imagenContacto" style="margin-bottom: 0px;">
+                            <img class="img-fluid" src="img/imgContacto.jpg" alt="Publico">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <form>
+                            <div class="form-group formulario">
+                                <h4 style="font-style: oblique;" class="formularioItem">Mensaje directo</h4>
+                                <input type="nombre" class="formularioItem formi" id="nombre" placeholder="Nombre de contacto">
+                                <input type="email" class="formularioItem formi" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="e-mail">
+                                <input type="asunto" class="formularioItem formi" id="asunto" placeholder="Asunto">
+                                <textarea class="formularioItem formi" id="exampleFormControlTextarea1" rows="3"
+                                    placeholder="Mensaje..."></textarea>
+                                <button type="submit" class="btn btn-raised btn-secondary" style="color:#F9ED3A;">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
+    <footer>
+        <div class="container-fluid pieDePagina">
+        </div>
+    </footer>
+    </div>
+
     <!--Aca pide los Scripts para Bootstrap, estos se piden
     antes de terminar con la etiqueta Body-->
-    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.paroller.js"></script>
+    <script>
+        $(document)
+            .ready(function () {
+                //initialize paroller.js
+                $('[data-paroller-factor]').paroller();
+                //initialize paroller.js and set options for elements with .paroller class
+                $('.paroller-example').paroller({
+                    factorXs: 0.1,
+                    factorSm: 0.1,
+                    factorMd: -0.4,
+                    factorLg: -0.5,
+                    factorXl: -0.6,
+                    factor: -0.4,
+                    type: 'foreground',
+                    direction: 'horizontal'
+                });
+            });
+    </script>
 </body>
 
 </html>
